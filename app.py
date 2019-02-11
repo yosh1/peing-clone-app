@@ -8,9 +8,9 @@ from rauth import OAuth1Service
 
 
 app = Flask(__name__)
-app.secret_key = 'wj9jr2jg@249j0J4h20JaV91A03f4j2'
+app.secret_key = 'xxxxxxxxxxxxxxxxx'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://taeomthpaemtohaemot:hmbhopmpbmaeo553gea95hjq350hgebae09tjh09aae@ec2-23-21-238-21.compute-1.amazonaws.com:5432/daba4242232di1"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://xxxxxxxxxxxxxxxxxxx"
 db = SQLAlchemy(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'index'
@@ -19,8 +19,8 @@ csrf = CSRFProtect(app)
 
 service = OAuth1Service(
     name='twitter',
-    consumer_key='3q2435h45y35thae5h5',
-    consumer_secret='D5e4t635h4eh64e57yjw5rZ',
+    consumer_key='xxxxxxxxx',
+    consumer_secret='xxxxxxxxx',
     request_token_url='https://api.twitter.com/oauth/request_token',
     authorize_url='https://api.twitter.com/oauth/authorize',
     access_token_url='https://api.twitter.com/oauth/access_token',
